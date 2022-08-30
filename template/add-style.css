@@ -1,0 +1,118 @@
+/* outer block */
+#add-remove-outer-button,
+#add-remove-button {
+  position: absolute;
+  top: -36.5px;
+  left: -2px;
+  height: 36px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #ccc;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+#add-remove-outer-button button,
+#add-remove-button button {
+  width: 90px;
+  font-size: 12px;
+}
+
+.div-outer-block-position {
+  position: relative;
+  border: 2px solid #ccc;
+  border-radius: 0 5px 5px 5px;
+  padding: 1rem 0 0 0;
+  transition: all 0.2s linear;
+}
+
+/* inner block */
+#add-remove-button {
+  left: auto;
+  right: 0px;
+}
+
+.div-inner-block-position {
+  position: relative;
+  border-top: 1px solid #ccc;
+}
+
+/* up down and hamburger button */
+.up,
+.down,
+.show-layout-editor {
+  width: 30px;
+  display: inline-block;
+  background-color: #fcfcfc;
+  color: #666;
+  border: 1px solid #999;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 auto;
+  line-height: 14px;
+  font-size: 11px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.tool-button {
+  background: #eee !important;
+}
+
+.layout-edit,
+.templates-show {
+  border: none;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  width: 100px;
+  padding: 0.5rem 0;
+  background: #fff;
+}
+
+.CV-save {
+  border: none;
+  width: 100px;
+  background: #1fbc89;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+.empty-field-content {
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #fbe1e3;
+  color: #e73d4a;
+  box-shadow: 0px 0px 2px #e73d4a;
+}
+.empty-field-content ul {
+  list-style-type: disc;
+  margin: 0 0 10px 0;
+}
+
+.stars{
+  cursor: pointer;
+}
+
+/* for resume editable */
+[contenteditable="true"] {
+    min-width: 5%;
+    max-width: 100%;
+    cursor: text;
+}
+
+[contenteditable="true"]:focus,
+[contenteditable="true"]:hover {
+    outline: 1px dashed darkcyan;
+    cursor: text;
+}
+
+[placeholder]:empty::before {
+    content: attr(placeholder);
+    color: #9197a3;
+    font-weight: 100;
+    padding: 3px;
+}
