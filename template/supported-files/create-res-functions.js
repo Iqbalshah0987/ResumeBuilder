@@ -19,7 +19,7 @@ function previewImage() {
         type:"POST",
         data:formData,
         cache: false,
-        contentType:false,  //multipart/form-data
+        contentType:false,  //'multipart/form-data'
         processData:false,
         success:function(result){
 

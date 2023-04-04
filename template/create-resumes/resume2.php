@@ -12,7 +12,7 @@ if(isset($_SESSION['uid'])){
 }
 $res_id='2';
 
-include "../resume-fetch.php";
+include "../supported-files/resume-fetch.php";
 $user_name=str_replace(" ","-",$name);
 
 

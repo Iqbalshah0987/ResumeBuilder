@@ -20,15 +20,15 @@ $data_pos = explode(',', $resumes['def_block_positions']);
 $hide_block = explode(',', $resumes['def_hide_block_positions']);
 
 // fetch resume data in variables 
-include "resume-fetch.php";
+include "supported-files/resume-fetch.php";
 
 // get all variables in session
-include "variable-fetch.php";
+include "supported-files/variable-fetch.php";
 
 ?>
 
 <!-- add css -->
-<link rel="stylesheet" href="add-style.css">
+<link rel="stylesheet" href="supported-files/add-style.css">
 
 
 <div id="main-create-resume">
@@ -208,16 +208,16 @@ require "../pin/footer-links.php";
 ?>
 
 <!-- for add suggestion of every block -->
-<script src="suggestions.js"></script>
+<script src="supported-files/suggestions.js"></script>
 
 <!-- for inner and outer blocks tools  -->
-<script src="inner-outer-block.js"></script>
+<script src="supported-files/inner-outer-block.js"></script>
 
 <!-- edit layout show template -->
-<script src="edit-layout-show-template.js"></script>
+<script src="supported-files/edit-layout-show-template.js"></script>
 
 <!-- create resume functions -->
-<script src="create-res-functions.js"></script>
+<script src="supported-files/create-res-functions.js"></script>
 
 
 <script>
