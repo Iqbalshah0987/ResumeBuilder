@@ -1,0 +1,136 @@
+<!-- 
+
+  reserved class names
+
+  //personal details
+  1. name
+  2. curr-position
+  3. career-objective
+
+  //social details
+  1. email
+  2. mobile
+  3. linkedin
+  4. github
+  5. address
+  6. gender
+  7. website
+
+  //work experience details
+  1. work-exp-title
+  2. work-exp-pos
+  3. work-exp-comp
+  4. work-exp-date
+  5. work-exp-address
+  6. work-exp-desc
+
+  // education details
+  1. education-title
+  2. colg-crs-name
+  3. colg-name
+  4. colg-crs-date
+  5. colg-crs-address
+  6. colg-crs-subject
+
+  //skills details
+  1. skill-title
+  2S. skill
+
+  //language details
+  1. language-title
+  2. language
+
+  //interest details
+  1. interest-title
+  2. interest
+
+  //certificate details
+  1. certificate-title
+  2. cert-name
+  3. cert-date
+  
+  //honour & award details
+  1. award-title
+  2. award-name
+  3. award-date
+
+  //activities details
+  1. activity-title
+  2. activity-org-name
+  3. activity-pos-name
+  4. activity-date
+  5. activity-desc
+
+  // reference details
+  1. reference-title
+  2. reference
+
+-->
+
+<!-- 
+  //reserved title class
+  1. skill-title
+  2. work-exp-title
+  3. education-title
+  4. activity-title
+  5. certificate-title
+  6. award-title
+  7. interest-title
+  8. language-title
+  9. reference-title
+
+-->
+
+<!--
+  //reserved block class
+  1. div-outer-block
+
+-->
+
+<!--
+  //reserved block inner class
+  1. div-inner-block
+
+-->
+
+<!--
+  //resume block show or hide class
+  1. res-block
+  2. active-res-block
+
+-->
+
+<!--   
+  //reserved block inner id's
+  1. skills-span-block-inner
+  2. language-span-block-inner
+  3. interest-span-block-inner
+
+-->
+
+<!--
+  //reserved id's for suggestions
+  1. personal-suggestion
+  2. personal-social-suggestion
+  3. objective-suggestion
+  4. skills-suggestion
+  5. work-experience-suggestion
+  6. educations-suggestion
+  7. activities-suggestion
+  8. certification-suggestion
+  9. award-suggestion
+  10. interest-suggestion
+  11. reference-suggestion
+  12. addition-info-suggestion
+
+-->
+
+<!--
+  //layout reserved class
+  1. group-blocks
+  2. block
+  3. active-block
+  4. main-all-blocks
+  5. res-block
+
+-->
