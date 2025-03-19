@@ -1,16 +1,16 @@
 <?php
-
+require_once '../../fun/config.php';
+// print_r($_SESSION);
 //include autoloader
 require_once '../../dompdf/vendor/autoload.php';
-require_once '../../fun/config.php';
+
 
 
 $num=$_GET['num'];
-
 if(isset($_SESSION['uid'])){
     $uid=$_SESSION['uid'];
 }
-$res_id='1';
+$res_id=$_GET['res_id'];
 
 include "../supported-files/resume-fetch.php";
 $user_name=str_replace(" ","-",$name);
@@ -529,7 +529,7 @@ $output.='</table>
 
 
 
-//echo $output;
+// echo $output;
 $document->loadHtml($output);
 
 //set page size and orientation

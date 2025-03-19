@@ -14,17 +14,16 @@ $resumes = mysqli_fetch_assoc(mysqli_query($db, "SELECT * FROM `resumes` WHERE `
 
 // for find resume block positions //for resume layout pages
 $default_block_positions = explode(',', $resumes['def_block_positions']);
-$default_hide_block_positions = explode(',', $resumes['def_hide_block_positions']);
+$default_hide_block_positions = explode(',', $resumes['def_hide_block_positions']??'');
 
 $data_pos = explode(',', $resumes['def_block_positions']);
-$hide_block = explode(',', $resumes['def_hide_block_positions']);
+$hide_block = explode(',', $resumes['def_hide_block_positions']??'');
 
 // fetch resume data in variables 
 include "supported-files/resume-fetch.php";
 
 // get all variables in session
 include "supported-files/variable-fetch.php";
-
 ?>
 
 <!-- add css -->

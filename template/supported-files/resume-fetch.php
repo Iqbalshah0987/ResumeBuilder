@@ -4,7 +4,6 @@ $name = $curr_position = $objective = "";
 $gender = $website = $email = $mobile = $address = $linkedin = $github = "";
 $image = "";
 
-$data_pos = $hide_block = [];
 $skill_title = "";
 $skill = $progress_tag = [];
 $skill_len = $progress_tag_len = 0;
@@ -42,7 +41,6 @@ $reference = [];
 $reference_len = 0;
 
 $resume_fetch = mysqli_query($db, "SELECT * FROM `user_resumes` WHERE `user_id`='$uid' and `resume_id`='$res_id'");
-
 if (mysqli_num_rows($resume_fetch) > 0) {
     $fetch_data = mysqli_fetch_assoc($resume_fetch);
 

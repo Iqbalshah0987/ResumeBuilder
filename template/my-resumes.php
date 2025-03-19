@@ -41,7 +41,7 @@ if(isset($_SESSION['uid'])){
                                 <div class="d-flex align-items-center gap-4">
                                     <img src="../img/temp-img/<?php echo $res_img['res_img']; ?>" style="width: 90px; border:1px solid #bdbebf;" alt="">
                                     <div class="h-100 text-left">
-                                        <h4 class="mb-2"><a href="create-resumes/<?php echo $res_img['res_name']; ?>?num=0" class="fw-lighter" target="_blank">Preview</a></h4>
+                                        <h4 class="mb-2"><a href="create-resumes/<?php echo $res_img['res_name']; ?>?num=0&res_id=<?php echo $row['resume_id']; ?>" class="fw-lighter" target="_blank">Preview</a></h4>
                                         <p class="mb-2"><?php echo $row['name']; ?></p>
                                         <p class="mb-2">Last Updated : <?php echo $row['created_at']; ?> </p>
                                     </div>
@@ -53,7 +53,7 @@ if(isset($_SESSION['uid'])){
                             <div class="col-6">
                                 <div class="d-flex justify-content-end align-items-center gap-3 h-100">
                                     <button class="btn btn-sm btn-topcv" onclick="clear_Data_Session('create-resume.php?res-id=<?php echo $row['resume_id']; ?>');"><i class="bi bi-pencil-square"></i>&nbsp;Edit&nbsp;</button>
-                                    <a href="create-resumes/<?php echo $res_img['res_name']; ?>?num=1" role="button" class="btn btn-sm btn-topcv"><i class="bi bi-cloud-arrow-down-fill"></i>&nbsp;Download&nbsp;</a>
+                                    <a href="create-resumes/<?php echo $res_img['res_name']; ?>?num=1&res_id=<?php echo $row['resume_id']; ?>" role="button" class="btn btn-sm btn-topcv"><i class="bi bi-cloud-arrow-down-fill"></i>&nbsp;Download&nbsp;</a>
                                     <a href="../fun/dash-resume.php?delete-resume=<?php echo $row['resume_id']; ?>" role="button" class="btn btn-sm btn-topcv"><i class="bi bi-trash-fill"></i>&nbsp;Delete&nbsp;</a>
                                 </div>
                             </div>

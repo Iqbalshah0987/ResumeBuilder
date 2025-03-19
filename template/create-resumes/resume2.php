@@ -10,7 +10,7 @@ $num=$_GET['num'];
 if(isset($_SESSION['uid'])){
     $uid=$_SESSION['uid'];
 }
-$res_id='2';
+$res_id=$_GET['res_id'];
 
 include "../supported-files/resume-fetch.php";
 $user_name=str_replace(" ","-",$name);
